@@ -42,6 +42,41 @@
     text-align: center;
 }
 
+/* Other tabs infobox */
+
+#infobox{
+}
+
+#img-section{
+    text-align: center;
+    align-content: center;
+    margin-left: 320px;
+    border: 5px;
+    border-radius: 8px;
+    display: block;
+    border-color: white;
+    width: 620px;
+    height: 350px;
+}
+
+#infoboxh3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: white;
+    align-content: normal;
+    margin-left: 650px;
+}
+
+#infoboxdesc{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: white;
+    align-content: normal;
+    position: relative;
+    margin-left: 650px;
+    margin-right: 650px;
+}
+
 nav {
     background-color: transparent;
     overflow: hidden;
