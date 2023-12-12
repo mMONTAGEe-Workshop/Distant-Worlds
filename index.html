@@ -20,23 +20,31 @@
         <h1 id="navbarh1"> DISTANT WORLDS <i class="bi bi-chevron-bar-expand"></i> </h1>
 </div>
 <section id="mainsection">
-<div id="navbar">
-    <nav>
-        <a href="respublic.html"> <i class="bi bi-globe2"></i> Nations (Outdated)</a>
-        <a href=""> <i class="bi bi-journal-richtext"></i> Logbooks</a>
-        <a href=""> <i class="bi bi-tools"></i> Technologies</a>
-    </nav>
-</div>
-    <div class="slide-in">
-        <img src="img/kitria.png" alt="test">
+    <div id="navbar">
+        <nav>
+            <a href="respublic.html"> <img src="svg/diplomacy.svg"> Nations (Outdated)</a>
+            <a href=""> <img src="svg/technologies.svg"> Technologies</a>
+            <a href="starsystems.html"> <img src="svg/starsystem.svg"> Star Systems</a>
+        </nav>
     </div>
-<h2 id="description">Distant Worlds, Story set in 23th Century in the Future, Humanity have expanded across Solar System, Stellar Neighborhood and Through Bridges across galaxies. Republics Form Alliances or Declare Wars. Colonies fight for Independence against oppression. Humanity becoming Member of Galactic Alliance against Stellar Empire. Humanity gaining respect from galactic neighborhood civilisations and become member of Bridge Trade</h2><h2 id="description">In Distant Worlds you will encounter</h2>
-<li id="listmain">Mostly Hard Science</li>
-<li id="listmain">Theoretical Concepts of Technologies realised</li>
-<li id="listmain">Fictional Extrasolar civilisations and technologies</li>
-<li id="listmain">Detailed Ship Engineerings</li>
-<li id="listmain">Realistic Exobiology, Planetology, Geology</li>
-<li id="listmain">Cosmic Stories and Characters</li>
+    <div class="row">
+        <div class="col-sm">
+            <h2 id="description">Distant Worlds, Story set in 23th Century in the Future, Humanity have expanded across Solar System, Stellar Neighborhood and Through Bridges across galaxies. Republics Form Alliances or Declare Wars. Colonies fight for Independence against oppression. Humanity becoming Member of Galactic Alliance against Stellar Empire. Humanity gaining respect from galactic neighborhood civilisations and become member of Bridge Trade
+            <br>
+                <br> In Distant Worlds you will encounter:
+            <br> - Mostly Hard Science
+            <br> - Theoretical Concepts of Technologies realised
+            <br> - Detailed Ship Engineerings
+            <br> - Realistic Exobiology, Planetology, Geology
+            <br> - Cosmic Stories and Characters </h2>
+           </div>
+        <div class="col-sm">
+            <video id="mainvideo" autoplay muted loop>
+                <source src="vid/luneterra.mp4"
+            </video>
+        </div>
+        </div>
+    </div>
 </section>
 <hr>
 <br>
@@ -46,38 +54,5 @@
     <h4 id="bottomcredits">Worldbuilding Contributors: Varaxia</h4>
     <h4 id="bottomcredits">Web Contributors: Gerardagh</h4>
 </div>
-
-<script src="Starfield.js"></script>
-<script>
-    var container = document.getElementById('container');
-    var starfield = new Starfield();
-    starfield.initialise(container);
-    starfield.start();
-
-    function randomise() {
-        starfield.stop();
-        starfield.stars = Math.random()*1000 + 50;
-        starfield.minVelocity = Math.random()*30+5;
-        starfield.maxVelocity = Math.random()*50 + starfield.minVelocity;
-        starfield.start();
-    }
-
-    function hideMessage(){
-        info.style.visibility = "hidden" ;
-    }
-</script>
-<script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-41728580-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-</script>
 </body>
 </html>
