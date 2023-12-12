@@ -47,6 +47,37 @@
     <h4 id="bottomcredits">Web Contributors: Gerardagh</h4>
 </div>
 
+<script src="Starfield.js"></script>
+<script>
+    var container = document.getElementById('container');
+    var starfield = new Starfield();
+    starfield.initialise(container);
+    starfield.start();
 
+    function randomise() {
+        starfield.stop();
+        starfield.stars = Math.random()*1000 + 50;
+        starfield.minVelocity = Math.random()*30+5;
+        starfield.maxVelocity = Math.random()*50 + starfield.minVelocity;
+        starfield.start();
+    }
+
+    function hideMessage(){
+        info.style.visibility = "hidden" ;
+    }
+</script>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41728580-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
 </body>
 </html>
