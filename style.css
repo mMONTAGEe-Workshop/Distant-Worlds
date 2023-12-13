@@ -27,10 +27,19 @@
     position: fixed;
     color:white;
     font-family: 'Oswald', sans-serif;
-    margin-top: 50px;
-    margin-right: 850px;
-    margin-left: 50px;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: 15px;
+    max-width: 780px;
     text-align: left;
+}
+
+#referallinks{
+    align-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 #listmain{
@@ -71,11 +80,20 @@ hr {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     color: white;
-    align-content: normal;
+    align-content: center;
     position: relative;
-    margin-left: 680px;
-    margin-right: 650px;
     overflow: hidden;
+    text-decoration: none;
+}
+
+#bigapl{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    align-content: center;
     text-decoration: none;
 }
 
@@ -85,43 +103,53 @@ hr {
 }
 
 #img-section {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     align-content: center;
-    margin-left: 320px;
-    border: 5px;
-    border-radius: 8px;
-    display: block;
-    border-color: white;
-    width: 620px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     height: 350px;
-    transition: width 0.3s ease;
-    cursor: pointer;
+    height: 350px;
+    border-radius: 8px;
 }
 
-#img-section.enlarged {
-    width: 1920px;
-    height: 1020px;
-    margin-left: -320px;
+#img-section-planets {
+    text-align: center;
+    align-content: center;
+    margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    height: 500px;
+    border-radius: 8px;
 }
+
 
 
 #infoboxh3{
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     color: white;
-    align-content: normal;
-    margin-left: 650px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 680px;
+    align-content: center;
+    position: relative;
 }
 
-#infoboxdesc{
+#infoboxdesc {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     color: white;
-    align-content: normal;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    align-content: center;
     position: relative;
-    margin-left: 650px;
-    margin-right: 650px;
 }
 
 nav {
@@ -150,7 +178,7 @@ body {
 }
 
 #planetsection{
-    overflow: scroll;
+    overflow: hidden;
     height: auto;
 }
 
