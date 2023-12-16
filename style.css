@@ -213,3 +213,33 @@ body {
     text-align: left;
     font-family: 'Oswald', sans-serif;
 }
+
+.redirect-button {
+    position: fixed;
+    margin: auto;
+    bottom: 20px;
+    right: auto;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button1 {
+    bottom: 20px;
+    right: 0px;
+}
+
+.button2 {
+    bottom: 20px;
+    right: 100px;
+}
+
+.redirect-button:hover {
+    background-color: #ffffff;
+    color: black;
+}
