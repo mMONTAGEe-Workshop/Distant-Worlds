@@ -29,7 +29,7 @@ canvas{
 }
 
 #mainvideo{
-    position: absolute;
+    position: relative;
     text-align: right;
     overflow: hidden;
     margin-left: 120px;
@@ -37,15 +37,13 @@ canvas{
     height: 800px;
 }
 
-#description{
-    position: fixed;
+ #description{
+    position: relative;
+    background: transparent;
+    z-index: 0;
     color:white;
     font-family: 'Oswald', sans-serif;
-    margin-top: 25px;
-    margin-right: auto;
-    margin-left: 15px;
-    max-width: 780px;
-    text-align: left;
+    margin: auto;
 }
 
 #referallinks{
@@ -179,29 +177,67 @@ hr {
     position: relative;
 }
 
-nav {
-    overflow: hidden;
-    background-color: transparent;
+/* First CSS Code */
+.dropdown:hover > .dropdown-menu,
+.dropdown-item:hover > .dropdown-menu {
+    display: block;
 }
 
-nav a, .dropbtn {
-    float: left;
-    display: block;
+ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+.navbar-nav .nav-link {
+    display: inline-block;
+}
+
+.ml-auto {
+    display: inline-block !important;
+}
+
+.dropdown > .dropdown-toggle:active {
+    pointer-events: none;
+}
+
+/* Second CSS Code Integration */
+#navbarResponsive {
+    overflow: hidden;
+    position: static;
+    background-color: transparent;
+    padding-bottom: 20px;
+    z-index: 9999;
+    text-align: left; /* Align text to the left */
+}
+
+#dropdown-menu-div {
+    background: transparent;
+}
+
+#navbarResponsive ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Remove default list styling */
+}
+
+#navbarResponsive li {
+    display: block; /* Display list items as blocks */
+}
+
+#navbarResponsive a,
+#navbarResponsive .dropbtn {
+    display: inline-block; /* Display as inline-block */
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-nav a:hover, .dropbtn:hover {
+#navbarResponsive a:hover,
+#navbarResponsive .dropbtn:hover,
+#navbarResponsive .dropdown-item:hover {
+    display: inline-block;
     background-color: #ddd;
     color: black;
-}
-
-body {
-    background-color: #000;
-    margin: 0;
-    overflow: hidden;
 }
 
 #planetsection{
