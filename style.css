@@ -36,13 +36,7 @@ canvas{
 }
 
 #mainvideo{
-    position: relative;
-    text-align: right;
-    overflow: hidden;
-    margin-left: 120px;
-    z-index: 0;
-    width: 800px;
-    height: 800px;
+    display: none;
 }
 
  #description{
@@ -303,4 +297,38 @@ ul li {
 .redirect-button:hover {
     background-color: #ffffff;
     color: black;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    width: 900px;
+    height: 900px; /* Set a maximum height as needed */
+    margin-left: 120px;
+    overflow: hidden; /* Hide overflow content */
+}
+
+.slide {
+    display: none;
+    animation: fade 8s ease-in-out infinite;
+}
+
+.fade {
+    animation-fill-mode: forwards; /* Keeps the last frame of the animation */
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1.4; /* Begin fade in at 25% of the animation duration */
+    }
+    75% {
+        opacity: 1; /* Maintain full opacity until 75% of the animation duration */
+    }
+    100% {
+        opacity: 0;
+    }
 }
