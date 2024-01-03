@@ -9,6 +9,14 @@
     overflow: scroll;
 }
 
+.row{
+    position: relative;
+}
+
+.col-sm{
+    position: relative;
+}
+
 #navbarh1{
     color:white;
     margin-left: 15px;
@@ -21,7 +29,6 @@ canvas{
     background-color: #000;
     z-index: -1;
     position: fixed;
-    position: fixed;
     bottom: 0;
     right: 0;
     top: 0;
@@ -33,6 +40,7 @@ canvas{
     text-align: right;
     overflow: hidden;
     margin-left: 120px;
+    z-index: 0;
     width: 800px;
     height: 800px;
 }
@@ -40,10 +48,14 @@ canvas{
  #description{
     position: relative;
     background: transparent;
+     font-size: 22px;
     z-index: 0;
     color:white;
     font-family: 'Oswald', sans-serif;
-    margin: auto;
+    margin-right: auto;
+     margin-top: auto;
+     margin-bottom: auto;
+     margin-left: 8px;
 }
 
 #referallinks{
@@ -203,9 +215,8 @@ ul li {
 /* Second CSS Code Integration */
 #navbarResponsive {
     overflow: hidden;
-    position: static;
+    position: relative;
     background-color: transparent;
-    padding-bottom: 20px;
     z-index: 9999;
     text-align: left; /* Align text to the left */
 }
