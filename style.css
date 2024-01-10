@@ -289,10 +289,27 @@ ul li {
     font-family: 'Rubik', sans-serif;
 }
 
-.redirect-button {
+.stories-button {
+    position: relative;
+    margin: auto;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.stories-button:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.back-button {
     position: fixed;
     margin: auto;
-    bottom: 20px;
     right: auto;
     background-color: transparent;
     color: #fff;
@@ -304,7 +321,7 @@ ul li {
     transition: background-color 0.3s;
 }
 
-.back-button {
+.redirect-button {
     position: fixed;
     margin: auto;
     right: auto;
