@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@font-face {
+    font-family: astro-dw;
+    src:url("astro.ttf");
+}
 
 #header{
     background-color: black;
@@ -18,9 +22,12 @@
 }
 
 #navbarh1{
+    font-family: astro-dw;
+    font-size: 25px;
     color:white;
     margin-left: 15px;
 }
+
 
 canvas{
     margin: 0;
@@ -42,10 +49,10 @@ canvas{
  #description{
     position: relative;
     background: transparent;
-     font-size: 22px;
+     font-size: 21px;
     z-index: 0;
     color:white;
-    font-family: 'Oswald', sans-serif;
+     font-family: 'Rubik', sans-serif;
     margin-right: auto;
      margin-top: auto;
      margin-bottom: auto;
@@ -63,7 +70,7 @@ canvas{
 #listmain{
     list-style-type: square;
     color:white;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
     margin-right: 50px;
     margin-left: 50px;
     text-align: left;
@@ -74,7 +81,7 @@ canvas{
     align-content: center;
     text-align: center;
     color:white;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
     text-decoration: underline;
 }
 
@@ -96,7 +103,7 @@ canvas{
 }
 
 #apl {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 20px;
     color: white;
     align-content: center;
@@ -106,7 +113,7 @@ canvas{
 }
 
 #bigapl{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 25px;
     color: white;
     text-align: center;
@@ -159,7 +166,7 @@ canvas{
 
 
 #infoboxtitle{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 35px;
     color: white;
     text-align: left;
@@ -171,7 +178,7 @@ canvas{
 }
 
 #infoboxh3{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 20px;
     color: white;
     text-align: left;
@@ -184,7 +191,7 @@ canvas{
 
 
 #infoboxdesc {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 20px;
     color: white;
     text-align: left;
@@ -199,6 +206,7 @@ canvas{
 .dropdown:hover > .dropdown-menu,
 .dropdown-item:hover > .dropdown-menu {
     display: block;
+    font-family: 'Rubik', sans-serif;
 }
 
 ul li {
@@ -278,7 +286,7 @@ ul li {
     margin-left: 15px;
     align-content: center;
     text-align: left;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .redirect-button {
@@ -291,9 +299,28 @@ ul li {
     padding: 10px 5px;
     text-decoration: none;
     border-radius: 5px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 16px;
     transition: background-color 0.3s;
+}
+
+.back-button {
+    position: fixed;
+    margin: auto;
+    right: auto;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #ffffff;
+    color: black;
 }
 
 .button1 {
@@ -303,7 +330,7 @@ ul li {
 
 .button2 {
     bottom: 20px;
-    right: 100px;
+    right: 125px;
 }
 
 .redirect-button:hover {
