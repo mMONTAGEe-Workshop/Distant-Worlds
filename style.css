@@ -146,8 +146,8 @@ canvas{
     margin-right: auto;
     display: flex;
     justify-content: left;
-    width: 820px;
-    height: 820px;
+    width: 30%;
+    height: 30%;
     border-radius: 8px;
 }
 
